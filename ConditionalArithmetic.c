@@ -50,6 +50,10 @@ int number = 0; // only numbers from 1-100
    printf("%d\n", CalculateAdd(number));
  }
  else
+ if (CalculateMultiply(number) < 0) {
+   printf("Overflow!\n" );
+ }
+ else 
   printf("%d\n", CalculateMultiply(number));
 
   return 0;
